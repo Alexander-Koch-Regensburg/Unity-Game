@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 1aa197289722b384dbaf4a640145db9b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - origin: {instanceID: 0}
+  - projectileRigidbody: {instanceID: 0}
+  - onEnvironmentCollision: {instanceID: 0}
+  - onPersonCollision: {instanceID: 0}
+  - mixer: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

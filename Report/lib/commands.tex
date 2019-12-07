@@ -1,0 +1,104 @@
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-6pt plus 2pt minus 2pt}
+
+% Kopf- und Fusszeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\leftmark}{\rightmark}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{\thesection\space\contentsname}
+\lfoot{}
+\cfoot{}
+\rfoot{\ \linebreak Seite \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Vorspann
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\theHsection}{\Roman{section}}
+\pagenumbering{Roman}
+
+\newcommand{\folgen}[1]{
+\ensuremath
+#1
+}
+
+\newcommandx{\rueckert}[3][]{
+	\def\nameRueckert{#1}%
+	\def\matnrRueckert{#2}%
+	\def\studiengangRueckert{#3}%
+}
+
+\newcommandx{\hiller}[3][]{
+	\def\nameHiller{#1}%
+	\def\matnrHiller{#2}%
+	\def\studiengangHiller{#3}%
+}
+
+\newcommandx{\dunphy}[3][]{
+	\def\nameDunphy{#1}%
+	\def\matnrDunphy{#2}%
+	\def\studiengangDunphy{#3}%
+}
+
+\newcommandx{\koch}[3][]{
+	\def\nameKoch{#1}%
+	\def\matnrKoch{#2}%
+	\def\studiengangKoch{#3}%
+}
+
+\newcommandx{\MyTitelseite}[6][]{
+\thispagestyle{empty}
+\includegraphics[scale=0.2]{pics/oth-logo.png}\hfill
+\begin{center}
+\ifthenelse{\equal{#1}{2}}{ % then
+	\vspace*{2cm}
+	\Large
+	\textbf{Ostbayerische Technische Hochschule Regensburg}\\
+	\textbf{Fakultät für Informatik und Mathematik}\\
+	\vspace*{2cm}
+	\Huge
+	\textbf{#2}\\[1em]
+	\large
+	Zur Erlangung des akademischen Grades des\\
+	\ifthenelse{\equal{#2}{Bachelorarbeit}}{Bachelor of Science (B.Sc.)}{Master of Science (M.Sc.)}\\
+	\vspace*{1cm}
+	\Large
+	\textbf{#3}\\
+}{ % else
+	\vspace*{1cm}
+	\Large
+	\textbf{#3}\\
+	\vspace*{2cm}
+	\large
+	An der Fakultät für Informatik und Mathematik der\\
+	Ostbayerischen Technischen Hochschule Regensburg\\[2em]
+	eingereichter\\
+	\vspace*{1cm}
+	\Large
+	\textbf{#2}\\[2em]
+}
+	\vfill
+	\includegraphics[height=6cm]{#6}
+	\vfill
+	\normalsize
+	%\newcolumntype{x}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
+	\begin{tabular}{rlll}%{6cm}p{7.5cm}}
+	    \rule{0mm}{1ex}\textbf{Teammitglieder:}
+	    & \nameHiller & \matnrHiller & \studiengangHiller \\
+	    & \nameRueckert & \matnrRueckert & \studiengangRueckert\\ 
+		& \nameDunphy & \matnrDunphy & \studiengangDunphy \\
+		& \nameKoch & \matnrKoch & \studiengangKoch \\[1cm]
+		\rule{0mm}{1ex}\textbf{Betreuer:} & #4 \\ 
+		\rule{0mm}{1ex}\textbf{Abgabedatum:} & #5 \\ 
+	\end{tabular} 
+\end{center}
+\pagebreak
+}
+
+%%% Use command tabitem to set a bullet point in front of a word. 
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+% Referenzierung auf subfigures 
+\newcommand\sref[1]{\protect\subref{#1}}
+\WithSuffix\newcommand\sref*[1]{\protect\subref*{#1}}

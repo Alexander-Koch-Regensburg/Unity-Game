@@ -1,0 +1,47 @@
+#app {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.enemy-card + .enemy-card {
+    margin-top: 20px;
+}
+
+.interactable + .interactable {
+    margin-top: 10px;
+}
+
+.enemy-card--left {
+    width: 58%;
+}
+
+.enemy-card--right {
+    width: 42%;
+}
+
+/* borders */
+
+.enemy-card {
+    border: 2px solid gray;
+}
+
+.enemy-card--middle,
+.enemy-card--bottom {
+    border-top: 2px solid gray;
+}
+
+.enemy-card--right {
+    border-left: 2px solid gray;
+}
+
+/* buttons */
+
+.btn-primary {
+    background-color: #A31800;
+    border-color: #A31800;
+}
+
+.btn-primary:hover {
+    background-color: #BD1E02;
+    border-color: #BD1E02;
+}

@@ -1,0 +1,200 @@
+{
+    "Size": {
+        "x": 64,
+        "y": 64
+    },
+    "Player": {
+        "WeaponType": "PISTOL",
+        "Amount": 10,
+        "SpawnPosition": {
+            "x": 3.0,
+            "y": 3.0
+        }
+    },
+    "levelElements": {
+        "walls": [
+            {
+                "Position": {
+                    "x": 5,
+                    "y": 0
+                }
+            },
+            {
+                "Position": {
+                    "x": 0,
+                    "y": 5
+                }
+            },
+            {
+                "Position": {
+                    "x": 2,
+                    "y": 2
+                }
+            },
+            {
+                "Position": {
+                    "x": 8,
+                    "y": 1
+                }
+            },
+            {
+                "Position": {
+                    "x": 4,
+                    "y": 4
+                }
+            }
+        ],
+        "doors": [
+            {
+                "Position": {
+                    "x": 7,
+                    "y": 7
+                },
+                "Rotation": "VERTICAL"
+            },
+            {
+                "Position": {
+                    "x": 6,
+                    "y": 6
+                },
+                "Rotation": "VERTICAL"
+            },
+            {
+                "Position": {
+                    "x": 1,
+                    "y": 3
+                },
+                "Rotation": "VERTICAL"
+            },
+            {
+                "Position": {
+                    "x": 5,
+                    "y": 2
+                },
+                "Rotation": "HORIZONTAL"
+            },
+            {
+                "Position": {
+                    "x": 1,
+                    "y": 2
+                },
+                "Rotation": "VERTICAL"
+            }
+        ],
+        "EndZones":[
+            {
+                "Position": {
+                    "x":40,
+                    "y":50
+                }
+            }
+        ]
+    },
+    "levelItems": {
+        "weapons": [
+            {
+                "Position": {
+                    "x": 3.5,
+                    "y": 6.0
+                },
+                "Rotation": 30.0,
+                "Type": "PISTOL",
+                "Ammount": -1
+            },
+            {
+                "Position": {
+                    "x": 6.0,
+                    "y": 21.0
+                },
+                "Rotation": 30.0,
+                "Type": "PISTOL",
+                "Ammount": 10
+            },
+            {
+                "Position": {
+                    "x": 6.1,
+                    "y": 21.2
+                },
+                "Rotation": 30.0,
+                "Type": "MACHINEGUN",
+                "Ammount": 300
+            },
+            {
+                "Position": {
+                    "x": 6.2,
+                    "y": 20.9
+                },
+                "Rotation": 30.0,
+                "Type": "PISTOL",
+                "Ammount": 13
+            }
+        ]
+    },
+    "Enemies": [
+        {
+            "Type": "BASIC",
+            "PatrolPoints": [
+                {
+                    "x": 14.0,
+                    "y": 61.0
+                },
+                {
+                    "x": 2.0,
+                    "y": 61.0
+                }
+            ],
+            "Position": {
+                "x": 14.0,
+                "y": 61.0
+            },
+            "WeaponType": "MACHINEGUN",
+            "Amount": 20
+        },
+        {
+            "Type": "BASIC",
+            "PatrolPoints": [
+                {
+                    "x": 61.0,
+                    "y": 61.0
+                },
+                {
+                    "x": 61.0,
+                    "y": 3.0
+                }
+            ],
+            "Position": {
+                "x": 61.0,
+                "y": 61.0
+            },
+            "WeaponType": "PISTOL",
+            "Amount": 25
+        },
+        {
+            "Type": "BASIC",
+            "PatrolPoints": [
+                {
+                    "x": 2.0,
+                    "y": 18.0
+                },
+                {
+                    "x": 21.0,
+                    "y": 18.0
+                },
+                {
+                    "x": 21.0,
+                    "y": 38.0
+                },
+                {
+                    "x": 2.0,
+                    "y": 38.0
+                }
+            ],
+            "Position": {
+                "x": 2.0,
+                "y": 18.0
+            },
+            "WeaponType": "PISTOL",
+            "Amount": 20
+        }
+    ]
+}

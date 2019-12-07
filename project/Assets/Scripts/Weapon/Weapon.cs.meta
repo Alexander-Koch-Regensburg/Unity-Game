@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 62f7e936f6e58f649b03aea613881705
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - sprite: {instanceID: 0}
+  - mixer: {instanceID: 0}
+  - onFiring: {instanceID: 0}
+  - onReload: {instanceID: 0}
+  - onCollecting: {instanceID: 0}
+  - onNoAmmoFiring: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

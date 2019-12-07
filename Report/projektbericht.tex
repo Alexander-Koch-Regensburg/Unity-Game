@@ -1,0 +1,173 @@
+\documentclass[12pt,a4paper,bibliography=totocnumbered,listof=totocnumbered]{scrartcl}
+% u.U. muss Koma-Skript Package ueber MikTeX deinstalliert und neu installiert werden
+% Hilft das nicht, so sollte statt scrartcl die Dokumentenklasse article verwendet werden
+\input{lib/includes}
+\input{lib/commands}
+\addbibresource{quellen.bib}
+
+\begin{document}
+
+
+% ----------------------------------------------------------------------------------------------------------
+% Titelseite
+% ----------------------------------------------------------------------------------------------------------
+
+%---------------------------------------------------------------------------------------------------------
+%Studenteninfos
+\rueckert{Tobias Rückert}
+{3202917}
+{Software Engineering}
+
+\hiller{Christian Hiller}
+{3198157}
+{Software Engineering}
+
+\dunphy{Elizabeth Dunphy}
+{3207842}
+{Software Engineering}
+
+\koch{Alexander Koch}
+{3195044}
+{Software Engineering}
+%---------------------------------------------------------------------------------------------------------
+
+\MyTitelseite{1}											% Style der Titelseite (1 oder 2)
+{Projektbericht zum Projektstudium im Master}	            % Typ des Projekts)
+{Design und Implementierung eines 2D Shooters in Unity}		% Thema der Arbeit						
+{Prof.\ Dr.\ Carsten Kern}		% Betreuer
+{14.11.\the\year}				% Abgabedatum
+{pics/title.png}			% Bild des Projekts/Teams etc.
+
+% Abstände Überschrift
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+\titlespacing{\subsubsection}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+
+\setcounter{page}{1} 
+% ----------------------------------------------------------------------------------------------------------
+% Inhaltsverzeichnis
+% ----------------------------------------------------------------------------------------------------------
+\tableofcontents
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Abbildungsverzeichnis
+% ----------------------------------------------------------------------------------------------------------
+\lhead{}
+\rhead{Abbildungsverzeichnis}
+\listoffigures
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Inhalt
+% ----------------------------------------------------------------------------------------------------------
+
+% Kopfzeile
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\subsectionmark}[1]{}
+\renewcommand{\subsubsectionmark}[1]{}
+\lhead{Kapitel \thesection}
+\rhead{\rightmark}
+
+\setstretch{1.2} % Zeilenspacing
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theHsection}{\arabic{section}}
+\setcounter{section}{0}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% ----------------------------------------------------------------------------------
+% includes Hauptinhalt
+% ----------------------------------------------------------------------------------
+
+% Einleitung
+\include{content/introduction}
+\pagebreak
+
+% Levelaufbau
+\include{content/level_structure}
+\pagebreak
+
+% Charaktere und Waffen
+\include{content/characters_items}
+\pagebreak
+
+% Gegner und KI
+\include{content/enemies_ai}
+\pagebreak
+
+% Audio
+\include{content/audio}
+\pagebreak
+
+% Serialisierung und Deserialisierung
+\include{content/serialization}
+\pagebreak
+
+% Schnittstelle für Machine-Learning
+\include{content/ai_interface}
+\pagebreak
+
+% Der Level Editor
+\include{content/leveleditor}
+\pagebreak
+
+% Testen des Spiels
+\include{content/testing}
+\pagebreak
+
+% Fazit
+\include{content/conclusion}
+\pagebreak
+
+% ----------------------------------------------------------------------------------------------------------
+% Filter fuer Literatur und Quellen definieren
+% ----------------------------------------------------------------------------------------------------------
+
+\defbibheading{Quellen}{\section*{Quellenverzeichnis}} 
+
+% ----------------------------------------------------------------------------------------------------------
+% Literatur
+% ----------------------------------------------------------------------------------------------------------
+\lhead{} 
+\rhead{Quellenverzeichnis} 
+
+% Break urls if necessary
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
+
+\addcontentsline{toc}{section}{Quellenverzeichnis}
+\printbibliography[heading=Quellen]
+\phantomsection
+
+\pagebreak 
+\rhead{} 
+
+
+% ----------------------------------------------------------------------------------------------------------
+% Anhang
+% ----------------------------------------------------------------------------------------------------------
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\lhead{Anhang \thesection}
+
+\begin{appendix}
+\section*{Anhang}
+\phantomsection
+\addcontentsline{toc}{section}{Anhang}
+\addtocontents{toc}{\vspace{-0.5em}}
+
+\include{content/author_list}
+
+\include{content/working_times}
+
+\end{appendix}
+
+
+\pagebreak
+
+
+
+
+\end{document}

@@ -1,0 +1,141 @@
+{
+	"ID": "0533b10f-51d1-4664-a070-05c17db83952",
+	"Type": "EASY",
+	"Health": 2,
+	"MaxVelocity": 5.0,
+	"TurnVelocity": 6.0,
+	"PatrolVelocity": 3,
+	"Acceleration": 500.0,
+	"VisionAngle": 60.0,
+	"VisionRange": 10.0,
+    "Position": {
+        "x": 5.77645445,
+        "y": 5.53645945
+    },
+    "WeaponType": "PISTOL",
+    "Ammunition": 12,
+    "ProjectileDamage": 1,
+    "ProjectileSpeed": 20.0,
+    "Awareness": 20.0,
+    "InciteEnemiesRange": 5.0,
+    "LastKnownPlayerPosition": {
+        "x": 5.77645445,
+        "y": 5.53645945
+    },
+    "CurrentDestination": {
+        "x": 5.77645445,
+        "y": 5.53645945
+    },
+    "CurrentVelocity": 3.0,
+    "PatrolPoints": [
+        {
+            "x": 60.0,
+            "y": 3.0
+        },
+        {
+            "x": 60.0,
+            "y": 61.0
+        }
+    ],
+    "VisibleElements": {
+		"LevelElements": {
+		    "Walls": [
+		        {
+		            "Position": {
+		                "x": 63,
+		                "y": 47
+		            }
+		        },
+		        {
+		            "Position": {
+		                "x": 63,
+		                "y": 48
+		            }
+		        }
+		    ],
+		    "Doors": [
+		        {
+		            "Position": {
+		                "x": 38,
+		                "y": 11
+		            },
+		            "Rotation": "HORIZONTAL"
+		        },
+		        {
+		            "Position": {
+		                "x": 16,
+		                "y": 16
+		            },
+		            "Rotation": "VERTICAL"
+		        },
+		        {
+		            "Position": {
+		                "x": 38,
+		                "y": 11
+		            },
+		            "Rotation": "HORIZONTAL"
+		        },
+		        {
+		            "Position": {
+		                "x": 16,
+		                "y": 16
+		            },
+		            "Rotation": "VERTICAL"
+		        }
+		    ]
+		},
+		"LevelItems": {
+		    "Weapons": [
+		        {
+		            "Position": {
+		                "x": 3.5,
+		                "y": 6.0
+		            },
+		            "Rotation": 30.0,
+		            "Type": "PISTOL",
+		            "Ammunition": 12,
+		            "Interactable": "true",
+		            "ID": "9a016a33-3be6-4792-a333-8c15e29df9af"
+		        }
+		    ]
+		},
+		"Enemies": [
+		    {
+		        "Position": {
+		            "x": 5.33,
+		            "y": 61.5
+		        },
+		        "Type": "BASIC",
+		        "WeaponType": "MACHINEGUN",
+		        "Ammunition": 20,
+		        "Health": 2,
+		        "Awareness": 30.0
+		    }
+		],
+		"Player": {
+			"Position": {
+		            "x": 5.33,
+		            "y": 61.5
+	        },
+	        "Rotation": 20.0,
+	        "WeaponType": "MACHINEGUN",
+	        "Ammunition": 20,
+	        "Health": 4
+		},
+		"Projectiles": [
+		    {
+		        "Position": {
+		            "x": 5.33,
+		            "y": 61.5
+		        },
+		        "Direction": {
+		            "x": 2.33,
+		            "y": 0.5
+		        },
+		        "Velocity": 10,
+		        "Damage": 2,
+		        "Origin": "0533b10f-51d1-4664-a070-05c17db83952"
+		    }
+		],
+    }
+}
