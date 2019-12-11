@@ -1,5 +1,10 @@
 # This .gitignore file should be placed at the root of your Unity project directory
 
+# Project
+UML/**
+WebApp/**
+
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -82,9 +87,6 @@ crashlytics-build.properties
 *.synctex.gz
 Report/projektbericht-blx.bib
 Report/projektbericht.run.xml
-Report/projektbericht.pdf
-
-Report/projektbericht.pdf
 
 # WebApp
 node_modules/
